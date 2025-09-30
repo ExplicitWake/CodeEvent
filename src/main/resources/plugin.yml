@@ -1,0 +1,7 @@
+name: CodeEvent
+version: '${project.version}'
+main: ru.awake.codeevent.CodeEvent
+api-version: '1.16'
+commands:
+  code: {}
+  codeadm: {}

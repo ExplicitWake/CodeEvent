@@ -1,0 +1,21 @@
+event-settings:
+  delay: 1800 # Раз в какой промежуток времени случается ивент. (сек)
+  code-length: 8 # Длина кода.
+  characters: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" # Символы, которые может содержать код.
+  random-command: true # Если true, то из всего списка commands рандомно будет выбираться одна и выполняться будет только она.
+  commands: # Команды, которые будут выполняться при успешном вводе промокода.
+    - "give {player} gold_ingot 1"
+messages: # Сообщения.
+  error-code: "&#FFF800&l[CodeEvent] &fКод был введен &cнеправильно&f или уже активирован!"
+  usage: "&#FFF800&l[CodeEvent] &fИспользование: &e/code &7<код>"
+  reload: "&#FFF800&l[CodeEvent] &fКонфигурация перезагружена."
+  help: "&#FFF800&l[CodeEvent] &fИспользование: &e/codeadm reload &7- &fперезагрузить плагин."
+  only-player: "&#FFF800&l[CodeEvent] &fКоманда доступна только игрокам!"
+  successful-input: "&#FFF800&l[CodeEvent] &fВы &aуспешно&f активировали промокод!"
+  global-warning:
+    - "&#FFF800&l[CodeEvent] &fПоявился &aновый&f промокод!"
+    - "&#FFF800&l[CodeEvent] &fСкорее вводи: &e/code {code}&f"
+    - "&#FFF800&l[CodeEvent] &fи забирай награду!"
+  global-activate:
+    - "&#FFF800&l[CodeEvent] &fИгрок &6{player}&f активировал код!"
+    - "&#FFF800&l[CodeEvent] &fИ получил награду."
